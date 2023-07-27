@@ -54,7 +54,7 @@ async def _check_member(client, message):
       except UserNotParticipant:
         try:
           sent_message = await message.reply_text(
-              " {}\n\nYou haven't joined Our Channel.\nPlease join using below button and press the UnMute Me button to unmute yourself.".format(message.from_user.mention, channel, channel),
+              " {}\n\nYou haven't joined Our Channel.\nපළමුව අපගේ ප්‍රධාන චැනලයට @BioVideoFullSyllubus සම්බන්ධ වී සිටින්න .චැනලයට Join වීමෙන් පසු "Unmute Me" යන Button එක Click කරන්න .නැතහොත් ඔබව මෙම සමූහයෙන් ඉවත් කිරීමට සිදුවේ .".format(message.from_user.mention, channel, channel),
               disable_web_page_preview=True,
              reply_markup=InlineKeyboardMarkup(
             [
